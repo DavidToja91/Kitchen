@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --grey : #444444;
+    --red: #b92519;
+
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-image: url('/images/bg-body.png');
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 10px 0px 10px;
+}
+
+/* HEADER */
+
+.main-header{
+    text-align: center;
+}
+.main-header .logo{
+    border-radius: 50%;
+}
+.main-header .toggle-nav{
+    background-color: var(--red);
+    border-radius: 2px;
+    color: white;
+    display: block;
+    margin: 20px  auto 15px auto;
+    padding: 5px;
+    width: fit-content;
+    
+}
+
+.main-header .main-nav ul li {
+    background-color: var(--grey);
+    margin-bottom: 1px;
+    padding: 5px;
+    text-transform: uppercase;
+
+}
+
+/* BANNER */
+.banner{
+    display: none;
+}
+
+/* PRODUCT */
+.vip-products .product{
+    max-width: 380px;
+    padding-bottom: 25px;
+
+}
+
+.vip-products .product a.more{
+    background-color:  var(--grey);
+    display: block;
+    margin-top: 10px;
+    padding: 7px;
+    text-align: center;
+    width: 95px;
+
+}
+
+.vip-products .product h2{
+    margin: 15px 0;
+}
+
+.vip-products .product p{
+    color: var(--grey);
+    margin-bottom: 26px;
+}
+
+.vip-products .product .photo-container{
+    position: relative;
+
+}
+
+.vip-products .product .photo-container img.photo{
+    width: 100%;
+
+}
+
+.vip-products .product .photo-container .special{
+    position: absolute;
+    top: 0px;
+    left: 74%;
+    
+
+}
+.vip-products .product .photo-container .zoom{
+    background-color: rgba(0,0,0,0.5);
+    left: 0%;
+    padding: 5px;
+    position: absolute; /* esos elementos se acomodan dentro del cuadrante */
+    text-align: center;
+    text-transform: uppercase;
+    top: 48%;
+    width: 100%;
+    
+}
+
+/* MEDIA */
+
+/* TABLET */
+@media (min-width: 768px){
+    .banner{
+        display: block;
+        width: 100%;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .vip-products .product{
+        display: inline-block;
+        width: 370px;
+    }
+}
